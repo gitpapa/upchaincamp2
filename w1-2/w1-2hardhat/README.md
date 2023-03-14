@@ -144,9 +144,12 @@ npx hardhat test test/Counter_test.js
 https://polygonscan.com/，注册并登录，申请APIKEY  
 
 将key复制到配置文件中，我的写到了env配置文件中。
-    const scankey = process.env.ETHERSCAN_API_KEY
+```
+ETHERSCAN_API_KEY=
+```
 修改hardhat.config.js文件，增加etherScan的配置项
 ```
+const scankey = process.env.ETHERSCAN_API_KEY
 etherscan: {
     apiKey: scankey
 },
