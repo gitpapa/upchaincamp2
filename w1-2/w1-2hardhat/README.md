@@ -1,13 +1,7 @@
-# Sample Hardhat Project
-
-This project demonstrates a basic Hardhat use case. It comes with a sample contract, a test for that contract, and a script that deploys that contract.
-
-Try running some of the following tasks:
-
-```shell
-npx hardhat help
-npx hardhat test
-REPORT_GAS=true npx hardhat test
-npx hardhat node
-npx hardhat run scripts/deploy.js
-```
+### w1-2hardhat
+    1.修改 Counter 合约，仅部署者可以调⽤ count();  
+    2.使⽤ Hardhat 部署修改后的 Counter   
+    3.使⽤ Hardhat 测试 Counter:  
+        Case1: 部署者成功调⽤ count()  
+        Case2: 其他地址调⽤ count() 失败  
+    4.代码开源到区块浏览器（npx hardhat verify …） / 写上合约地址  
